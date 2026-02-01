@@ -1,43 +1,51 @@
 ---
 name: skill-name
-description: "第三人称描述技能的功能和用途。包含触发条件：当用户要求执行某某任务时使用。"
-allowed-tools: Read, Write, Grep, Glob
+description: "Clear description of what this skill does and when to use it. Include specific triggers and contexts. Example: Use when the user asks to [specific action] or mentions [specific keywords]."
 ---
 
-# 技能标题
+# Skill Name
 
-简短描述这个技能的作用。
+Brief overview of what this skill does.
 
-## 核心能力
+## Core Capabilities
 
-- 功能1：具体描述
-- 功能2：具体描述
-- 功能3：具体描述
+- **Capability 1**: Description
+- **Capability 2**: Description
+- **Capability 3**: Description
 
-## 使用方式
+## Usage
 
-用户指定要执行的任务：
+Users can trigger this skill by:
 
-```
-示例用户指令
-```
+- "Example user request 1"
+- "Example user request 2"
+- "Example user request 3"
 
-## 详细流程
+## Workflow
 
-### 第一步：步骤名称
+### Step 1: Initial Action
 
-1. **子步骤1**：说明
-2. **子步骤2**：说明
+1. **Sub-step 1**: Explanation
+2. **Sub-step 2**: Explanation
 
-### 第二步：步骤名称
+### Step 2: Processing
 
-具体说明如何执行这一步。
+Detailed instructions for this step.
 
-### 第三步：步骤名称
+### Step 3: Output
 
-具体说明如何执行这一步。
+Detailed instructions for this step.
 
-## 参考资源
+## References
 
-- [参考文档1](references/reference1.md)
-- [参考文档2](references/reference2.md)
+For additional information, see:
+
+- [Reference Document 1](references/reference1.md)
+- [Reference Document 2](references/reference2.md)
+
+## Scripts
+
+Available scripts:
+
+- `scripts/script1.py` - Description of what this script does
+- `scripts/script2.py` - Description of what this script does

@@ -5,23 +5,26 @@
     "email": "daviwang1224@qq.com"
   },
   "metadata": {
-    "description": "Personal collection of Claude Code skills for software engineering and data modeling",
+    "description": "Personal collection of Claude Code skills for software engineering, data modeling, and project management",
     "version": "1.0.0"
   },
   "plugins": [
     {
-      "name": "datamodel-engineering",
-      "description": "Data modeling engineering toolkit including checkers, designers, and migrators for KMMOM data models",
-      "version": "1.0.0",
-      "author": {
-        "name": "wq",
-        "email": "daviwang1224@qq.com"
-      },
-      "source": "./plugins/datamodel-engineering",
-      "category": "data",
+      "name": "cc-skills-collection",
+      "description": "Comprehensive collection of skills including requirement clarification, code review, data modeling, document generation, and prompt optimization",
+      "source": "./",
       "strict": false,
       "skills": [
-        "./plugins/datamodel-engineering/skills/datamodel-checker/SKILL.md"
+        "./skills/ask-clarify",
+        "./skills/collaborative-partner",
+        "./skills/datamodel-checker",
+        "./skills/meeting-summarizer",
+        "./skills/mind-organizer",
+        "./skills/mr-code-reviewer",
+        "./skills/oss-scanner",
+        "./skills/prompt-optimizer",
+        "./skills/team-monthly-evaluation",
+        "./skills/week-report-assistant"
       ]
     }
   ]

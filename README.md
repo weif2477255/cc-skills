@@ -1,100 +1,143 @@
-# Personal Claude Code Skills
+# CC-Skills
 
-个人自定义Claude技能集合，涵盖数据建模、项目管理、架构设计等领域。
+个人自定义 Claude Code 技能集合，涵盖软件工程、数据建模、项目管理等领域。
 
-## 📦 插件列表
+## 关于技能
 
-| 插件名称 | 描述 | 技能数量 | 类别 |
-|---------|------|---------|------|
-| [datamodel-engineering](plugins/datamodel-engineering/) | 数据建模工程工具包 | 1 | data |
+技能是模块化、自包含的包，通过提供专业知识、工作流程和工具集成来扩展 Claude 的能力。将 Claude 从通用助手转变为配备特定领域程序性知识的专业助手。
 
-**总计**: 1个插件, 1个技能 (目标50+)
+## 快速开始
 
-## 🚀 安装方式
+### 在 Claude Code 中使用
 
-### 方法1: 添加本地市场（推荐）
+在 cc-skills 的**父目录**中运行以下命令添加本地市场：
 
-在cc-skills的**父目录**中运行：
 ```bash
 /plugin marketplace add ./cc-skills
 ```
 
-### 方法2: 安装特定插件
+然后安装技能集：
 
 ```bash
-/plugin install datamodel-engineering@cc-skills
+/plugin install cc-skills-collection@cc-skills
 ```
 
-### 方法3: 在Claude Code中浏览
+或者通过菜单浏览安装：
 
 ```bash
 /plugin menu
 ```
 
-## 📚 技能详情
+### 在 Claude.ai 中使用
 
-### 数据建模 (datamodel-engineering)
+1. 访问 Claude.ai 的技能管理页面
+2. 上传技能文件夹或 .skill 文件
+3. 开始使用技能
 
-- **datamodel-checker**: 检查数据模型规范符合性和业务设计合理性
-  - 验证7大检查维度（文档结构、命名规范、数据类型、引用完整性、继承关系、文档格式、业务设计）
-  - 跨文档引用验证（枚举、分类、单位、内置模型）
-  - 问题分级（严重错误❌ / 警告⚠️ / 提示ℹ️）
-  - 生成详细检查报告
+详细说明请参考 [Using skills in Claude](https://support.claude.com/en/articles/12512180-using-skills-in-claude)
 
-## 📚 文档
+## 技能列表
 
-### 目录规划
-- **[目录结构规范](docs/directory-structure-spec.md)**：cc-skills 的目录组织规范和命名约定
-- **[具体目录规划](docs/directory-plan.md)**：基于 slash-command-kit 的 30 个 commands 的具体目录规划
+本仓库包含 **10 个技能**，按功能分类如下：
 
-### 贡献指南
-- **[贡献指南](CLAUDE.md)**：如何添加新技能和插件
+### 需求与协作 (3)
 
-## 🛠️ 开发指南
+| 技能 | 描述 | 主要功能 |
+|------|------|---------|
+| [ask-clarify](skills/ask-clarify/) | 需求澄清与结构化 | 将模糊需求转化为结构化prompt，通过访谈澄清角色、任务、上下文、输出格式 |
+| [collaborative-partner](skills/collaborative-partner/) | 综合性AI协作共创助手 | 运用6种思维模型进行深度协作，适用于头脑风暴、架构设计、技术学习 |
+| [mind-organizer](skills/mind-organizer/) | 思维整理与任务规划 | 整理碎片化想法，运用系统思维进行可行性分析和优先级评估 |
 
-### 添加新技能
+### 代码与工程 (2)
 
-1. 确定所属插件或创建新插件
-2. 在 `plugins/<plugin-name>/skills/` 下创建技能目录
-3. 编写 [SKILL.md](templates/skill-template/SKILL.md)（参考模板）
-4. 更新 [marketplace.json](.claude-plugin/marketplace.json)
-5. 更新插件README.md
+| 技能 | 描述 | 主要功能 |
+|------|------|---------|
+| [mr-code-reviewer](skills/mr-code-reviewer/) | GitLab MR 代码审查 | 两阶段检查策略，支持Java和TypeScript，检查代码质量、安全漏洞、性能问题 |
+| [oss-scanner](skills/oss-scanner/) | 开源组件扫描与合规分析 | 扫描Maven/Gradle/npm依赖，检测许可证风险，生成合规报告 |
 
-详细步骤查看 [CLAUDE.md](CLAUDE.md)
+### 数据建模 (1)
 
-## 📂 目录组织规范
+| 技能 | 描述 | 主要功能 |
+|------|------|---------|
+| [datamodel-checker](skills/datamodel-checker/) | 数据模型检查 | 验证KMMOM数据模型规范符合性，检查7大维度，生成详细报告 |
 
-### 仓库结构
+### 文档与报告 (3)
+
+| 技能 | 描述 | 主要功能 |
+|------|------|---------|
+| [meeting-summarizer](skills/meeting-summarizer/) | 会议纪要总结器 | 将会议内容智能整理为规范的会议纪要文档，自动识别会议类型和行动项 |
+| [week-report-assistant](skills/week-report-assistant/) | 双周汇报助手 | 从团队工作日志生成结构化的双周进展汇报，支持IPD标准 |
+| [team-monthly-evaluation](skills/team-monthly-evaluation/) | 团队月度评价 | 自动化生成团队月度综合评价，包括数据清洗、统计分析、绩效评估 |
+
+### Prompt 工程 (1)
+
+| 技能 | 描述 | 主要功能 |
+|------|------|---------|
+| [prompt-optimizer](skills/prompt-optimizer/) | Prompt 优化器 | 使用57个经过验证的框架优化prompt，提供场景匹配和框架选择 |
+
+## 创建技能
+
+想要创建自己的技能？查看我们的 [贡献指南](CLAUDE.md)。
+
+### 基本技能结构
+
+技能是一个包含 `SKILL.md` 文件的文件夹：
+
+```
+skill-name/
+├── SKILL.md          # 必需：技能定义和指令
+├── scripts/          # 可选：可执行脚本
+├── references/       # 可选：参考文档
+└── assets/           # 可选：模板和资源文件
+```
+
+### 快速创建
+
+使用我们的模板快速开始：
+
+```bash
+cp -r templates/skill-template skills/my-skill
+```
+
+然后编辑 `SKILL.md` 文件，填写技能信息和指令。
+
+详细指南请参考 [CLAUDE.md](CLAUDE.md)。
+
+## 目录结构
 
 ```
 cc-skills/
 ├── .claude-plugin/
-│   └── marketplace.json
-├── skills/
-│   └── <skill-name>/
-│       ├── SKILL.md
-│       ├── references/
-│       ├── scripts/
-│       ├── examples/
-│       ├── templates/
-│       └── assets/
-├── template/
-│   └── SKILL.md
-├── docs/
-├── README.md
-└── CLAUDE.md
+│   └── marketplace.json      # 市场配置
+├── skills/                   # 所有技能
+│   ├── ask-clarify/
+│   ├── collaborative-partner/
+│   ├── datamodel-checker/
+│   └── ...
+├── templates/                # 技能模板
+│   ├── skill-template/
+│   └── plugin-template/
+├── README.md                 # 本文件
+└── CLAUDE.md                 # 贡献指南
 ```
 
-### 目录说明
+## 相关资源
 
-**仓库级别**
-- `.claude-plugin/` - 市场配置目录
-- `skills/` - 所有技能的根目录
-- `template/` - 技能模板目录
-- `docs/` - 文档目录（可选）
+### 官方文档
 
+- [Agent Skills 规范](https://agentskills.io/specification) - 完整的技能格式规范
+- [Claude Code 插件文档](https://code.claude.com/docs/en/plugins) - 插件系统文档
+- [创建自定义技能](https://support.claude.com/en/articles/12512198-creating-custom-skills) - 官方创建指南
 
+### 示例仓库
 
-## 📄 许可证
+- [Anthropic 官方技能](https://github.com/anthropics/skills) - Anthropic 的技能示例集合
+- [Agent Skills 网站](https://agentskills.io) - 技能标准和最佳实践
+
+## 许可证
 
 MIT License
+
+---
+
+**注意**：本仓库中的技能仅供演示和教育目的。在关键任务中使用前，请在您自己的环境中充分测试。
