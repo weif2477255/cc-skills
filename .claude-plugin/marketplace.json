@@ -16,15 +16,16 @@
       "strict": false,
       "skills": [
         "./skills/ask-clarify",
-        "./skills/collaborative-partner",
         "./skills/datamodel-checker",
+        "./skills/interviewer-review-assistant",
         "./skills/lowcode-biweekly-report",
         "./skills/meeting-summarizer",
-        "./skills/mind-organizer",
         "./skills/mind-partner",
         "./skills/mr-code-reviewer",
         "./skills/oss-scanner",
+        "./skills/ppt-reviewer",
         "./skills/prompt-optimizer",
+        "./skills/seed-sprout-report",
         "./skills/team-monthly-evaluation",
         "./skills/week-report-assistant"
       ]

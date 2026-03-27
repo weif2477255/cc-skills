@@ -1,6 +1,6 @@
 # CC-Skills
 
-个人自定义 Claude Code 技能集合，涵盖软件工程、数据建模、项目管理等领域。
+个人自定义 Claude Code 技能集合，涵盖需求澄清、评审分析、文档生成和 Prompt 工程等场景。
 
 ## 关于技能
 
@@ -38,38 +38,34 @@
 
 ## 技能列表
 
-本仓库包含 **12 个技能**，按功能分类如下：
+本仓库包含 **13 个技能**，按功能分类如下：
 
-### 需求与协作 (4)
+### 需求与协作 (2)
 
 | 技能 | 描述 | 主要功能 |
 |------|------|---------|
 | [ask-clarify](skills/ask-clarify/) | 需求澄清与结构化 | 将模糊需求转化为结构化prompt，通过访谈澄清角色、任务、上下文、输出格式 |
-| [collaborative-partner](skills/collaborative-partner/) | 综合性AI协作共创助手 | 运用6种思维模型进行深度协作，适用于头脑风暴、架构设计、技术学习 |
-| [mind-organizer](skills/mind-organizer/) | 思维整理与任务规划 | 整理碎片化想法，运用系统思维进行可行性分析和优先级评估 |
 | [mind-partner](skills/mind-partner/) | 私人AI协作伙伴 | 了解用户背景和思维偏好，接收碎片化想法，多轮迭代协作完成任务 |
 
-### 代码与工程 (2)
-
-| 技能 | 描述 | 主要功能 |
-|------|------|---------|
-| [mr-code-reviewer](skills/mr-code-reviewer/) | GitLab MR 代码审查 | 两阶段检查策略，支持Java和TypeScript，检查代码质量、安全漏洞、性能问题 |
-| [oss-scanner](skills/oss-scanner/) | 开源组件扫描与合规分析 | 扫描Maven/Gradle/npm依赖，检测许可证风险，生成合规报告 |
-
-### 数据建模 (1)
+### 评审与分析 (4)
 
 | 技能 | 描述 | 主要功能 |
 |------|------|---------|
 | [datamodel-checker](skills/datamodel-checker/) | 数据模型检查 | 验证KMMOM数据模型规范符合性，检查7大维度，生成详细报告 |
+| [interviewer-review-assistant](skills/interviewer-review-assistant/) | 面试官复盘助手 | 复盘面试官表现，检查提问覆盖、追问闭环和轮次目标匹配度 |
+| [mr-code-reviewer](skills/mr-code-reviewer/) | GitLab MR 代码审查 | 两阶段检查策略，支持Java和TypeScript，检查代码质量、安全漏洞、性能问题 |
+| [oss-scanner](skills/oss-scanner/) | 开源组件扫描与合规分析 | 扫描Maven/Gradle/npm依赖，检测许可证风险，生成合规报告 |
 
-### 文档与报告 (4)
+### 文档与报告 (6)
 
 | 技能 | 描述 | 主要功能 |
 |------|------|---------|
-| [meeting-summarizer](skills/meeting-summarizer/) | 会议纪要总结器 | 将会议内容智能整理为规范的会议纪要文档，自动识别会议类型和行动项 |
-| [week-report-assistant](skills/week-report-assistant/) | 双周汇报助手 | 从团队工作日志生成结构化的双周进展汇报，支持IPD标准 |
 | [lowcode-biweekly-report](skills/lowcode-biweekly-report/) | 低代码平台双周日报助手 | 自动化生成低代码平台双周日报，包括数据清洗、交互式信息收集和报告生成 |
+| [meeting-summarizer](skills/meeting-summarizer/) | 会议纪要总结器 | 将会议内容智能整理为规范的会议纪要文档，自动识别会议类型和行动项 |
+| [ppt-reviewer](skills/ppt-reviewer/) | PPT 演讲评审器 | 先评审再成稿，输出受控的逐页PPT结构化文案 |
+| [seed-sprout-report](skills/seed-sprout-report/) | 发芽报告助手 | 将一句记录或一段笔记发芽成带跨领域联想的新认知文本 |
 | [team-monthly-evaluation](skills/team-monthly-evaluation/) | 团队月度评价 | 自动化生成团队月度综合评价，包括数据清洗、统计分析、绩效评估 |
+| [week-report-assistant](skills/week-report-assistant/) | 双周汇报助手 | 从团队工作日志生成结构化的双周进展汇报，支持IPD标准 |
 
 ### Prompt 工程 (1)
 
@@ -95,13 +91,13 @@ skill-name/
 
 ### 快速创建
 
-使用我们的模板快速开始：
+直接在 `skills/` 下新建技能目录和 `SKILL.md`：
 
 ```bash
-cp -r templates/skill-template skills/my-skill
+mkdir skills/my-skill
 ```
 
-然后编辑 `SKILL.md` 文件，填写技能信息和指令。
+然后创建并编辑 `skills/my-skill/SKILL.md`，填写 frontmatter、工作流程和引用资源。
 
 详细指南请参考 [CLAUDE.md](CLAUDE.md)。
 
@@ -113,12 +109,12 @@ cc-skills/
 │   └── marketplace.json      # 市场配置
 ├── skills/                   # 所有技能
 │   ├── ask-clarify/
-│   ├── collaborative-partner/
 │   ├── datamodel-checker/
+│   ├── interviewer-review-assistant/
+│   ├── mind-partner/
+│   ├── ppt-reviewer/
+│   ├── seed-sprout-report/
 │   └── ...
-├── templates/                # 技能模板
-│   ├── skill-template/
-│   └── plugin-template/
 ├── README.md                 # 本文件
 └── CLAUDE.md                 # 贡献指南
 ```

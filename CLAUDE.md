@@ -224,10 +224,10 @@ Claude 仅在用户需要这些功能时读取 REDLINING.md 或 OOXML.md。
 
 ## 创建技能流程
 
-### 步骤 1：复制模板
+### 步骤 1：创建技能目录
 
 ```bash
-cp -r templates/skill-template skills/my-skill
+mkdir -p skills/my-skill
 ```
 
 ### 步骤 2：编辑 SKILL.md
@@ -415,5 +415,5 @@ skills-ref validate ./my-skill
 ## 获取帮助
 
 - 查看 [现有技能](skills/) 获取灵感
-- 参考 [模板](templates/skill-template/) 快速开始
+- 参考现有技能目录结构快速开始
 - 阅读 [Agent Skills 规范](https://agentskills.io/specification) 了解详细信息
