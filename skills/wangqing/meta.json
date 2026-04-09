@@ -2,24 +2,33 @@
   "name": "王晴",
   "slug": "wangqing",
   "created_at": "2026-04-08T20:01:38.9192457+08:00",
-  "updated_at": "2026-04-08T20:01:38.9192457+08:00",
-  "version": "v1",
+  "updated_at": "2026-04-09T08:41:55+08:00",
+  "version": "v3",
   "profile": {
     "company": "武汉开目信息技术股份有限公司",
     "level": "",
     "role": "MOM事业部产品开发部经理 / 低代码平台产品经理",
-    "gender": "",
+    "gender": "男",
     "mbti": "INTJ"
   },
   "tags": {
     "personality": [
+      "理性",
+      "专业",
+      "严谨务实",
+      "长期主义",
+      "有温度",
       "认真负责"
     ],
     "culture": [
-      "第一性原理"
+      "第一性原理",
+      "系统思维",
+      "规律思维",
+      "结构化",
+      "AI工程化"
     ]
   },
-  "impression": "认真负责、第一性原理",
+  "impression": "理性、专业、严谨务实、长期主义、有温度、第一性原理",
   "knowledge_sources": [
     "D:\\2_project\\km-work-docs-system\\01-context\\产品.md",
     "D:\\2_project\\km-work-docs-system\\01-context\\个人画像.md",
@@ -32,6 +41,8 @@
     "D:\\2_project\\km-work-docs-system\\05-growth\\2026-03-13-AI提质话术清单.md",
     "D:\\2_project\\km-work-docs-system\\05-growth\\2026-03-30-标准先行场景驱动工程落地是一套通用工作方法.md",
     "D:\\2_project\\km-work-docs-system\\05-growth\\2026-03-30-复杂工作真正的分水岭不是努力而是顺序.md",
+    "D:\\2_project\\km-work-docs-system\\05-growth\\2026-04-08-MOM团队角色重构与能力升级判断.md",
+    "D:\\2_project\\km-work-docs-system\\05-growth\\2025-06-26-设计就是做分类.md",
     "C:\\2_code\\1_km-mom3\\km-dev-docs\\README.md",
     "C:\\2_code\\1_km-mom3\\km-dev-docs\\01-concept\\project-charter.md",
     "C:\\2_code\\1_km-mom3\\km-dev-docs\\01-concept\\joint-working-group-charter.md",
@@ -49,5 +60,5 @@
     "C:\\2_code\\1_km-mom3\\km-mom-docs\\07-governance\\standards\\version-strategy.md",
     "C:\\2_code\\1_km-mom3\\km-mom-docs\\05-release\\deployment\\deployment-sop-initial.md"
   ],
-  "corrections_count": 0
+  "corrections_count": 1
 }
