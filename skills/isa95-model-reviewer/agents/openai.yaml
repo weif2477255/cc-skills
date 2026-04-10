@@ -1,0 +1,4 @@
+interface:
+  display_name: "ISA-95 Model Reviewer"
+  short_description: "Strict ISA-95 reviews for manufacturing models"
+  default_prompt: "Use $isa95-model-reviewer to review this manufacturing model, identify ISA-95 defects, and suggest scenario-based fixes."
